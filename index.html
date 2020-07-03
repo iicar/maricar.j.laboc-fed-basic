@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Site</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+<!-- Navigation Bar -->
+      <nav class="zone">
+        <ul class="main-nav">
+          <li class="navList"><a href="">SampleSite</a></li>
+          <div class="push">
+            <li class="navList"><img src="https://i.ya-webdesign.com/images/shopping-cart-icon-png-3.png" id="myBtn" class="cart-icon" /></li> 
+        </div>
+        </ul>
+      </nav>
+<!-- Modal -->
+ <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Shopping list:</p>
+      <ol id="productList">
+      </ol>
+      <button class="btn" id="emptyBtn" onclick="removeAll()">Empty Cart</button>
+    </div>
+  </div>
+<!-- Carousel -->
+    <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img class="imgcarousel" src="https://cdn.pixabay.com/photo/2019/11/26/12/09/black-friday-4654407_960_720.png" />
+            </div>
+            <div class="mySlides fade">
+              <img class="imgcarousel"  src="https://cdn.pixabay.com/photo/2019/09/25/14/09/gadgets-4503773_960_720.jpg" />
+            </div>
+            <div class="mySlides fade">
+              <img class="imgcarousel"  src="https://c1.wallpaperflare.com/preview/230/526/391/ecommerce-selling-online-online-sales-e-commerce-thumbnail.jpg" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+          <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+<!-- Products Display -->
+<div class="container" id= "info">
+    <div class="card">
+      <img src= "https://cdn.pixabay.com/photo/2018/10/31/14/57/apple-iphone-6-s-plus-a1687-3785988_960_720.jpg">
+      <div class="container">
+        <div id="name1">
+        </div>    
+        <button onclick="addtoCart1()">Buy</button>
+      </div>
+    </div>
+    <div class="card">
+        <img src=  "https://i.insider.com/5dc9a5383afd37405001d722?width=1100&format=jpeg&auto=webp">
+        <div class="container">
+          <div id="name2">
+          </div>
+          <button onclick="addtoCart2()">Buy</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src=  "https://i.insider.com/5dc9a5383afd37405001d722?width=1100&format=jpeg&auto=webp"  >
+        <div class="container">
+          <div id="name3">
+          </div>
+          <button onclick="addtoCart3()">Buy</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src=  "https://cdn.pixabay.com/photo/2018/10/31/14/57/apple-iphone-6-s-plus-a1687-3785988_960_720.jpg" >
+        <div class="container">
+          <div id="name4">
+          </div>
+          <button onclick="addtoCart4()">Buy</button>
+        </div>
+    </div>
+      <div class="card">
+        <img src=  "https://boygeniusreport.files.wordpress.com/2020/04/iphone-12-pro-max-pa.jpg?quality=70&strip=all&w=1200" >
+        <div class="container">
+          <div id="name5">
+          </div>
+          <button onclick="addtoCart5()">Buy</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src= "https://i.insider.com/5dc9a5383afd37405001d722?width=1100&format=jpeg&auto=webp">
+        <div class="container">
+          <div id="name6">
+          </div>
+          <button onclick="addtoCart6()">Buy</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src= "https://cdn.pixabay.com/photo/2018/10/31/14/57/apple-iphone-6-s-plus-a1687-3785988_960_720.jpg">
+        <div class="container">
+          <div id="name7">
+          </div>
+          <button onclick="addtoCart7()">Buy</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src=  "https://boygeniusreport.files.wordpress.com/2020/04/iphone-12-pro-max-pa.jpg?quality=70&strip=all&w=1200">
+        <div class="container">
+          <div id="name8">
+          </div>
+          <button onclick="addtoCart8()">Buy</button>
+        </div>
+      </div>
+  </div>
+    <footer class="zone yellow">&copy; 2019 FED Basic Assessment </div>
+        <script src="page-controls.js"></script>
+        <script src="script.js"></script>
+  </body>
+</html>
